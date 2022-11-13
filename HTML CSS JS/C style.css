@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/****************************************Icon **************************************/
+.neon {
+    margin-left: 40px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+    size: 10%;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+
+    }
+
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+
+}
+
+.neon div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.neon div span {
+    position: absolute;
+    margin-top: 50px;
+
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515, rgb(255, 123, 0));
+    transform: rotateY(calc(90deg*var(--i))) translatez(24.5px);
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: #222;
+    transform: rotateX(270deg) translatez(30px);
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 123, 0);
+    transform: translateZ(80px);
+    filter: blur(10px);
+    /*box-shadow: 0 0 120px rgba(0,225,0,0.4),
+    0,0,150px rgba(0,225,0,0.6),
+    0,0,200px rgba(0,225,0,0.8),
+    0,0,250px rgba(0,225,0,1);*/
+}
+
+body {
+    background: linear-gradient(90deg, white, rgb(185, 180, 180));
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)), url(Legend-Dennis-Ritchie.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    font-size: 80px;
+}
+
+.menu {
+    width: 600px;
+    float: right;
+    height: 50px;
+}
+
+.menu a {
+    font-size: 30px;
+
+}
+
+.menu ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ff7200;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+
+.menu ul li a:hover {
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff7200, 0 0 40px #ff7200, 0 0 80px #ff7200;
+    transition-delay: 0.1s;
+
+}
+
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 900px;
+}
+
+.srch {
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 30px;
+
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background: #ff7200;
+    margin-top: 15px;
+    color: #0c0c0c;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none
+}
+
+.Basic {
+    color: white;
+    margin-bottom: 50px;
+    size: 100px;
+
+}
+
+.int {
+    color: rgb(82, 152, 129);
+}
+
+.CD {
+    margin-left: 50px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.img a {
+    font-size: 50px;
+    display: block;
+
+}
+
+.img ul {
+    float: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+.img ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.img ul li a:hover {
+    color: #ff7200;
+    box-shadow: 0 0 10px #ff7200, 0 0 40px #ff7200, 0 0 80px #ff7200;
+    transition-delay: 0.1s;
+}
+
+/************************************Response Zoom In*********************************/
+@media(max-width:1300px) {
+    .Basic h1 {
+        margin-left: 40px;
+        margin-top: -100px;
+    }
+
+    .int h2 {
+        margin-left: 40px;
+        width: 1100px;
+
+    }
+
+    .CD img {
+        max-width: 1100px;
+    }
+
+    .search {
+        margin-left: 600px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 48px;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .int h2 {
+
+        width: 1000px;
+    }
+
+    .CD img {
+        max-width: 800px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 45px;
+    }
+}
+
+@media(max-width:1000px) {
+    .int h2 {
+
+        width: 900px;
+    }
+
+    .CD img {
+        max-width: 700px;
+    }
+
+    .menu ul {
+        margin-left: -300px;
+    }
+
+    .search {
+        margin-left: 300px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width:900px) {
+    .int h2 {
+
+        width: 800px;
+    }
+
+    .CD img {
+        max-width: 1000px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 38px;
+    }
+}
+
+@media(max-width:900px) {
+    .main {
+        width: 100%;
+        background: url(Legend-Dennis-Ritchie2.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+    }
+
+    .menu ul {
+        margin-left: -200px;
+    }
+
+    .search {
+        margin-left: 400px;
+
+    }
+
+    .int h2 {
+
+        width: 700px;
+    }
+
+    .CD img {
+        max-width: 500px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:800px) {
+    .main {
+        width: 100%;
+        background: url(Legend-Dennis-Ritchie2.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 900px;
+    }
+
+    .int h2 {
+
+        width: 600px;
+    }
+
+    .CD img {
+        max-width: 400px;
+    }
+
+    .menu ul {
+        margin-left: -300px;
+    }
+
+    .search {
+        margin-left: 300px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:700px) {
+    .main {
+        width: 100%;
+        background: url(Legend-Dennis-Ritchie2.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 1100px;
+    }
+
+    .int h2 {
+
+        width: 500px;
+    }
+
+    .menu ul {
+        margin-left: -400px;
+    }
+
+    .search {
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+
+    .CD img {
+        max-width: 400px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:600px) {
+    .main {
+        width: 100%;
+        background: url(Legend-Dennis-Ritchie2.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 1300px;
+    }
+
+    .int h2 {
+
+        width: 400px;
+    }
+
+    .menu ul {
+        margin-left: -450px;
+    }
+
+    .search {
+        margin-left: 130px;
+        margin-top: 20px;
+    }
+
+    .CD img {
+        max-width: 400px;
+    }
+
+    .CD h2 {
+        font-size: 20px;
+    }
+
+    .CD {
+        margin-right: 20px;
+    }
+
+    .img a {
+        font-size: 20px;
+
+    }
+    .img ul li a{
+        margin-right: 50px;
+    }
+}

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        C Language
+    </title>
+    <link rel="stylesheet" href="C style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <!--<div class="icon">
+                <h2 class="logo"> L4S </h2>
+            </div>-->
+            <div class="neon">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0"></span>
+                    <span style="--i:1"></span>
+                    <span style="--i:2"></span>
+                    <span style="--i:3"></span>
+
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="  Type for Search">
+                <a href="#"><button class="button">Search</button></a>
+
+            </div>
+            <div class="Basic">
+                <H1>
+                    <br><br><br><br><br><br> Introdction to C Language
+                </H1>
+            </div>
+            <div class="int">
+                <p>
+                <h2> Dennis Ritchie was an American computer scientist, best known as the creator of the computer
+                    programming
+                    language ‘C.’ Born in New York, Dennis completed his high-school graduation from the ‘Summit High
+                    School’ in New Jersey. He was an academically brilliant student and consistently scored high grades
+                    in
+                    school. He later attended ‘Harvard University’ and graduated in applied mathematics and physics. In
+                    1967, he joined ‘Bell Labs’ and pursued his PhD while working there. However, he did not earn his
+                    degree. He befriended Ken Thompson at ‘Bell Labs,’ and both of them began working on the ‘Multics’
+                    operating system there. There, Dennis created the programming language known as ‘C’ and the
+                    operating
+                    system named ‘Unix.’ Over time, ‘Unix’ became a popular operating system, with ‘C’ becoming the
+                    language
+                    most frequently used for writing computer programs. His works in the field of computer science
+                    earned
+                    Dennis (and his colleague Ken Thompson) a ‘Turing Award’ in 1983. Dennis and Ken also received the
+                    ‘National Medal of Technology’ and the ‘Japan Prize for Information and Communications.’
+                </h2>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="CD">
+        <h1><br><br>What is Computer?</h1>
+        <h2>
+            <br>A computer is an electronic device that accepts input, process it and generates
+            output.
+            The computer is programmed toaccept data, do some processing on it and generates
+            result.
+        </h2>
+
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="computer.jpg">
+        <h1><br><br>What is Computer System?
+        </h1>
+        <h2>
+            <br>The computer system primarily comprised of a central processing unit (CPU),
+            memory,
+            input/output devices and storage devices
+
+
+        </h2>
+        <h1><br>
+            <br>Components of Computer System
+        </h1>
+        <h2><br>The components of computer system work together as a single unit to deliver the
+            desired output. The various components of computer system are:
+            <br>1. Central Processing Unit (CPU)
+            <br>2. Input Devices
+            <br>3. Output Devices
+        </h2>
+        <h1><br>
+            &nbsp;Central Processing Unit (CPU)</h1>
+        <h2>&nbsp;<br>The CPU is also called as brain of the computer. It is the electronic circuit
+            where
+            actual
+            processing of data takes place. It is also known as processor of computer. It is
+            responsible
+            for all functions and processes.
+            <br>The CPU is composed of integrated circuits (ICs).
+            <br>It consists of three major parts:
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;<img src="computer system.jpg">
+
+            <br>1. <u>Arithmetic Logic Unit (ALU)</u>:&nbsp;The ALU performs arithmetic and logic
+            operations.
+            Arithmetic calculations like as <br>addition, subtraction,
+            multiplication and division.
+            Logical
+            operation like compare numbers, letters, or special characters
+            <br>2. <u>Control Unit (CU):</u>The Control Unit controls operations like input,
+            processing and output are performed by control unit. It takes care of step-by-step
+            processing of all
+            operations
+            inside the computer.
+            <br>3. <u>Registers</u>:&nbsp;The registers stores data, instructions and intermediate
+            results
+            while
+            processing.
+        </h2>
+        <h1><br><br>Input Device</h1>
+        <h2><br>The devices through which control signals are sent to a computer are termed as
+            input
+            devices. It translates data from form that humans understand to one that the
+            computer
+            can work with. Example of Input Devices are Keyboard, Mouse, >Microphone, Scanner,
+            Webcam etc.</h2>
+        <h1><br>Output Device</h1>
+        <h2><br>The device that receives data from a computer system for display, physical
+            production,
+            etc., is called output device. It converts the electronically generated
+            information
+            into
+            human-readable form. Example of Output Devices are Monitor, LCD, Speakers,
+            Projectors,
+            Printers etc.
+        </h2>
+
+        <br><br>
+        
+            <img src="io devices.png">
+        
+        <h1><br><br>Difference between Compiler and Interpreter</h1>
+        <h1><br>Compiler</h1>
+        <h2><br>A compiler is a software program that follows the syntax rule of programming
+            language
+            to convert a source code tomachine code. It cannot fix any error if present in a
+            program;
+            it generates an error message, and you have to correct it yourself in the
+            program's
+            syntax.
+            If your written program is correct (contains no error), then the compiler will convert
+            your
+            entire source code into machine code. A compiler converts complete source code into
+            machine code at once. And finally, your program get executes.
+            The entire compilation steps of source code are operated into two phases: Analysis
+            Phase
+            and Synthesis Phase.
+            <br><br>• <u>Analysis Phase</u> :This compiler phase is also known as the front-end phase
+            in
+            which a
+            source code is divided into fundamental parts to check grammar, syntax, and
+            semantic
+            of
+            code; after that, the intermediate code is generated. The analysis phase of the
+            compilation process includes a lexical analyzer, semantic analyzer, and syntax analyzer.
+            <br><br>• <u>Phase</u> : The Synthesis phase is also known as the back-end phase in which
+            the
+            intermediate code (which Analysis Phase) is optimized and generated
+            into target machine code. The synthesis phase of the compilation process
+            includes code
+            optimizer and code generator tasks.
+
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </h2>
+        <div class="img">
+            <ul>
+                <li><a href="com.png">Click For Compiler Flowchart</a></li>
+            </ul>
+        </div>
+        <h1><BR>Interpreter</h1>
+        <h2><BR>An interpreter is also a software program that translates a source code into a
+            machine
+            language. However, an interpreter converts high-level programming language into
+            machine language line-by-line while interpreting and running the program</h2>
+        <h1><br><br>Advantage and disadvantage of compiler</h1>
+        <h2><br>While using a compiler to translate a source code into machine code, the program
+            codes
+            are translated into different object codes. Hence the time of code execution is
+            significantly
+            less. The drawback of using a compiler is that you can only make changes in the
+            program
+            by going back to your source code</h2>
+        <h1><br><br>Advantage and disadvantage of an interpreter</h1>
+        <h2><br>The interpreter makes it easier to work with source code. So, it is highly
+            preferred,
+            especially for beginners. Interpreted programs can run on only those computers which
+            have the same interpreter</h2>
+
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="img">
+            <ul>
+                <li><a href="int.png">Click For Interpreter Flowchart</a></li>
+            </ul>
+        </div>
+
+        <h1><br><br>What is an Operating System?</h1>
+        <h2><br>Operating System lies in the category of system software. It basically manages
+            all the
+            resources of the computer. An operating system acts as an interface between the
+            software and different parts of the computer or the computer hardware. The
+            operating system is designed in such a way that it can manage the overall resources
+            and operations of the computer. It is a fully integrated set of specialized
+            programs
+            that handle all the operations of the computer. It controls and monitors the
+            execution of all other programs that reside in the computer, which also includes
+            application programs and other system software of the computer. Examples of the
+            operating system are Windows, Linux, Mac OS, etc</h2>
+
+        <h1><br><br>Objectives</h1>
+        <h2><br>Let us now see some of the objectives of the operating system, which are:
+            <br><br>1. Convenient to use: One of the objectives is to make the computer system
+            more convenient to use in an efficient manner.
+            <br><br>2. User Friendly: To make the computer system more interactive with a more
+            convenient interface for the users.
+            <br><br>3. To provide easy access to users for using resources by acting as an
+            intermediary between the hardware and its users.
+            <br><br>4. For managing the resources of a computer.
+            <br><br>5.Controls and Monitoring: By keeping the track of who is using which resource,
+            granting resource requests, and mediating conflicting requests from
+            different
+            programs and users.
+            <br><br>6. Providing efficient and fair sharing of resources between the users and
+            programs.
+        </h2>
+        <h1><br><br>Characteristics:</h1>
+        <h2><br>Let us now discuss some of the important characteristic features of operating
+            systems:
+            <br><br><br>• <u>Device Management</u> The operating system keeps track of all the
+            devices.
+            So,
+            it is also called the Input / Output controller that decides which process
+            gets
+            the device, when, and for how much time.
+            <br><br>• <u>Management:</u> It allocates and de-allocates the resources and also
+            decides who gets the resource.
+            <br><br>• <u>Job Accounting:</u> It keeps the track of time and resources used by various
+            jobs
+            or users.
+            <br><br>• <u>Error-detecting Aids:</u> It contains methods that include the production of
+            dumps, traces, error messages, and other debugging and error-detecting
+            methods.
+            <br><br>• <u>Memory Management:</u> It keeps track of the primary memory, like what part
+            of it is in use by whom, or what part is not in use, etc. and it also
+            allocates
+            the
+            memory when a process or program requests it.
+            <br><br>• <u>Processor Management:</u> It allocates the processor to a process and then
+            deallocates the processor when it is no longer required or the job is done.
+            <br><br>• <u>Control on System Performance:</u> It records the delays between the request
+            for a service and from the system.
+            <br><br>• <u>Security:</u> It prevents unauthorized access to programs and data by means
+            of
+            passwords or some kind of protection technique.
+        </h2>
+        <h1><br> Types of the operating system:</h1>
+        <h2>
+            <br><br>• <u>Batch Operating System:</u> This type of operating system does not interact
+            with the computer directly. There is an operator which takes similar jobs
+            having the same requirements and groups them into batches.
+            <br><br>• <u>Time-sharing operating System:</u> This type of operating system allows many
+            users to share computer resources. (Max utilization of the resources).
+            <br><br>• <u>Distributed operating System:</u> This type of operating system manages a
+            group of different computers and makes appearto be a single computer.
+            <br><br>• <u>Network operating system:</u> This type of operating system running on a
+            server and provides the capability to manage data, users, groups,
+            security,
+            applications, and other networking functions.
+            <br><br>• <u>Real-time operating system:</u> This type of operating system serves real
+            time
+            system and the time interval required to process and respond to inputs is
+            very small.
+        </h2>
+        <h1><br><br>What is a flowchart ?</h1>
+        <h2><br> A flowchart is a diagram that depicts a process, system or
+            computer algorithm. They are widely used in multiple fields to document, study,
+            plan,
+            improve and communicate often complex processes in clear, easy-to-understand
+            diagrams.</h2>
+        <h1><br><br>The flowchart in the C programming language
+        </h1>
+        <h2><br>In this article, we will understand how to create flow charts in the C
+            programming
+            language with the help of various examples.</h2>
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<img src="flow chart of sum.PNG">
+        <h1><br><br>What do you mean by flowchart?</h1>
+        <h2><br>The Flowchart is the most widely used graphical representation of an algorithm
+            and
+            procedural design workflows. It uses various symbols to show the operations and
+            decisions to be followed in a program. It flows in sequential order.</h2>
+        <h1><br><br>Types of Flowcharts</h1>
+        <h2><br>The various types of the flowchart are given below.
+            <br>• Horizontal Flowchart
+            <br>• Panoramic Flowchart
+            <br>• Vertical Flowchart
+            <br>• Architectural Flowchart
+        </h2>
+        <h1><br><br>Rules or guidelines of Flow
+            chart:</h1>
+        <h2><br>The various Rules or Guidelines for drawing the flowchart
+            are given below.
+            <br>• Only conventional flowchart symbols should be used.
+            <br>• Proper use of names and variables in the flowchart.
+            <br>• If the flowchart becomes large and arts should have start and stop points.
+        </h2>
+        <h1><br><br>Flowchart symbols:
+        </h1>
+        <h2><br>The different flowchart symbols have different conventional meanings.
+            The various symbols used in Flowchart Designs are given below.<br>
+            <br>• <u>Terminal Symbol:</u> In the flowchart, it is represented with the help of a
+            circle for denoting the start and stop symbol. The symbol given below is used to
+            represent
+            the terminal symbol.
+
+
+
+
+            <br><br>• <u>Input/output Symbol:</u> The input symbol is used to represent the input
+            data,
+            and the output symbol is used to display the output operation. The symbol given
+            below
+            is used for representing the Input/output symbol.
+
+            <br><br>• <u>Processing Symbol:</u> It is represented in a flowchart with the help of a
+            rectangle box used to represent the arithmetic and data movement instructions.
+            The
+            symbol
+            given below is used to represent the processing symbol.
+
+            <br><br>• <u>Decision Symbol:</u> Diamond symbol is used for represents
+            decision-making statements. The symbol given below is used to represent the
+            decision
+            symbol.
+
+            <br><br>• <u>Connector Symbol:</u> The connector symbol is used if flows
+            discontinued at some
+            point and continued again at another place. The following symbol is the
+            representation of the connector symbol.
+
+            <br><br>• <u>Flow lines:</u> It represents the exact sequence in which
+            instructions are executed.
+            Arrows are used to represent the flow lines in a flowchart. The symbol given
+            below
+            is used for representing the flow lines:
+
+            <br><br>• <u>Hexagon symbol (Flat):</u> It is used to create a preparation
+            box containing the loop setting statement. The symbol given
+            below is used for representing the Hexagon symbol.
+
+            <br><br>• <u>On-Page Reference Symbol:</u> This symbol contains a
+            letter inside that indicates
+            the flow continues on a matching symbol containing the same letters
+            somewhere else on the same page. The symbol given below is used for representing the
+            onpage reference symbol.
+
+            <br><br>• <u>Off-Page Reference:</u> This symbol contains a letter
+            inside indicating that the flow
+            continues on a matching symbol containing the same letter somewhere else
+            on a different page. The symbol given below is used to represent the off-page
+            <br>reference symbol.
+
+            <br><br>• <u>Delay or Bottleneck:</u> This symbol is used for
+            identifying a delay in a flowchart. The
+            alternative name used for the delay is the bottleneck. The symbol
+            given below is used to represent the delay or bottleneck symbol.
+
+            <br><br>• <u>Document Symbol:</u> This symbol is used in a
+            flowchart to indicate a document or report. The symbol given below is used to 
+            represent the document symbol.
+
+            <br><br>• <u>Internal storage symbol:</u> The symbol given below is used to represent the
+            internal storage symbol
+            <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="fcs.jpg">
+        </h2>
+        <h1><br><br>Advantages of Flowchart in C:
+        </h1>
+        <h2><br>Following are the various advantages of flowchart:
+            <br><br>• <u>Communication:</u> A flowchart is a better way of communicating the logic of
+            a
+            program.
+            <br><br>• <u>Synthesis:</u> Flowchart is used as working models in designing new programs
+            and
+            software systems.
+            <br><br>• <u>Efficient Coding</u>: Flowcharts act as a guide for a programmer in writing
+            the
+            actual
+            code in a high-level language.
+            <br><br>• <u>Proper Debugging:</u> Flowcharts help in the debugging process.
+            <br><br>• <u>Effective Analysis:</u> Effective analysis of logical programs can be easily
+            done
+            with
+            the help of a related flowchart.
+            <br><br>• <u>Proper Documentation:</u> Flowchart provides better and proper documentation.
+            It
+            consists of various activities such as collecting, organizing, storing, and
+            maintaining
+            all related program records.
+            <br><br>• <u>Testing:</u> A flowchart helps in the testing process.
+            <br><br>• <u>Efficient program maintenance:</u> The maintenance of the program becomes
+            easy
+            with the help of a flowchart.
+        </h2>
+        <h1><br><br>Disadvantages of Flowchart in C:</h1>
+        <h2><br>Following are the various disadvantages of flowchart:
+            <br><br>• Time-consuming: Designing a flowchart is a very time-consuming process.
+            <br>• Complex: It isn't easy to draw a flowchart for large and complex programs.
+            <br>• There is no standard in the flowchart; there is no standard to determine the
+            quantity of detail.
+            <br>• Difficult to modify: It is very difficult to modify the existing flowchart.
+        </h2>
+
+        <div class="img">
+            <ul>
+                <li><a href="fc.html">Click for Flowchart examples</a></li>
+            </ul>
+        </div>
+        <h1><br><br>Errors in C</h1>
+        <h2><br>Error is an illegal operation performed by the user which results in abnormal
+            working of the
+            program.
+            <br><br>Programming errors often remain undetected until the program is compiled or
+            executed.
+            Some of the errors inhibit the program from getting compiled or executed. Thus,
+            errors
+            should be removed before compiling and executing.
+            The most common errors can be broadly classified as follows.
+            <br><br>Type of errors:
+            <br><br> 1. <u>Syntax errors</u> : Errors that occur when you violate the rules of writing
+            C/C++ syntax
+            are known as syntax errors. This compiler error
+            indicates something that must be
+            fixed before the code can be compiled. All these errors are detected by
+            compiler and
+            thus are known as compile-time errors.
+            <br><u>Most frequent syntax errors are</u>:
+            <br>• Missing Parenthesis (})
+            <br>• Printing the value of variable without declaring it
+            <br>• Missing semicolon
+            <br><br>2. <u>Run-time Errors</u> : Errors which occur during program execution(run-time)
+            after
+            successful compilation are called run-time errors. One of the
+            most common run-time
+            errors is division by zero also known as Division error. These types of
+            error are hard
+            to find as the compiler doesn’t point to the line at which the error occurs.
+
+            <br><br>3. <u>Linker Errors</u> : This error occurs when after compilation we link the
+            different object
+            files with main’s object using Ctrl+F9 key (RUN). These are
+            errors generated when
+            the executable of the program cannot be generated. This may be
+            due to wrong
+            function prototyping, incorrect header files. One of the most common linker errors is
+            writing Main () instead of main ().
+
+            <br><br>4. <u>Logical Errors</u> : On compilation and execution of a program, desired
+            output
+            is not
+            obtained when certain input values are given. These types of
+            errors which provide
+            incorrect output but appears to be error free are called logical errors.
+            These are one
+            of the most common errors done by beginners of programming.
+            These errors solely depend on the logical thinking of the
+            programmer and are easy
+            to detect if we follow the line of execution and determine why the program
+            takes
+            that path of execution.
+
+            <br><br>5. <u>Semantic errors</u> : This error occurs when the statements written in the
+            program are
+            not meaningful to the compiler.
+        </h2>
+        <h1><br><br>Loops in C: For, While, Do While looping
+            Statements</h1>
+        <h1><br>
+            What is Loop in C?</h1>
+        <h2>
+            <br>
+            Looping Statements in C execute the sequence of statements many times until the
+            stated condition becomes false. A loop in C consists of two parts, a
+            body of a loop
+            and a control statement. The control statement is a combination of
+            some conditions
+            that direct the body of the loop to execute until the specified condition becomes
+            false. The purpose of the C loop is to repeat the same code a number
+            of times.
+
+
+            <br><br>;• While Loop in C
+            <br>• Do-While loop in C
+            <br>• For loop in C
+            <br>• Break Statement in C
+            <br>• Continue Statement in C
+
+            <br><br><u>Types of Loops in C</u>
+            <br><br>Depending upon the position of a control statement in a program,
+            looping
+            statement in C is classified into two types:
+            <br>1. Entry controlled loop
+            <br>2. Exit controlled loop
+            <br>In an entry control loop in C, a condition is checked before
+            executing the body of a
+            loop. It is also called as a pre-checking loop.
+            In an exit controlled loop, a condition is checked after executing the body of a loop.
+            It is also called as a post-checking loop.
+            Sample Loop
+            The control conditions must be well defined and specified otherwise the loop will
+            execute an infinite number of times. The loop that does not stop
+            executing and
+            processes the statements number of times is called as an infinite loop.
+            An infinite
+            loop is also called as an “Endless loop.” <br><br><u>Following are some
+                characteristics of an
+                infinite loop</u>:
+            <br>1. No termination condition is specified.
+            <br>2. The specified conditions never meet.
+            The specified condition determines whether to execute the loop body or not.
+            <br><br><u>‘C’ programming language provides us with three types of loop
+                constructs:</u>
+            <br><br>1. The while loop
+            <br>2. The do-while loop
+            <br>3. The for loop
+        </h2>
+        </h2>
+        <h1><br><br>While Loop in C</h1>
+        <h2><br>A while loop is the most straightforward looping structure. While
+            loop syntax in
+            C
+            programming language is as follows:
+        </h2>
+        <h1><br><br>Syntax of While Loop in C:</h1>
+        <h2><br>
+            <br>while (condition)
+            <br>{
+            <br>statements;
+            <br>}
+            <br><br>It is an entry-controlled loop. In while loop, a condition is evaluated
+            before
+            processing a body of the loop. If a condition is true then and only then the
+            body of a
+            loop is executed. After the body of a loop is executed then control again goes
+            back
+            at the beginning, and the condition is checked if it is true, the same process is
+            executed until the condition becomes false. Once the condition becomes false,
+            the
+            control goes out of the loop.
+            After exiting the loop, the control goes to the statements which are immediately
+            after the loop. The body of a loop can contain more than one statement. If it
+            contains
+            only one statement, then the curly braces are not compulsory. It is a good
+            practice
+            though to use the curly braces even we have a single statement in the body.
+            In while loop, if the condition is not true, then the body of a loop will not be
+            executed,
+            not even once. It is different in do while loop which we will see shortly.
+        </h2>
+        <div class="img">
+            <ul>
+                <li><a href="#"> Example for While Loop </a></li>
+            </ul>
+        </div>
+        <h1><br><br>Do-While loop in C</h1>
+        <h2><br>A do…while loop in C is similar to the while loop except that the condition is
+            always
+            executed after the body of a loop. <br>It is also called an exit-controlled loop.
+        </h2>
+        <h1><br><br>Syntax of Do-While Loop in C:</h1>
+        <h2><br>do
+            <br>{
+            <br>statements
+            <br>} while (expression);
+            <br><br>As we saw in a while loop, the body is executed if and only if the condition
+            is true. In
+            some cases, we have to execute a &body of the loop at least once even if the
+            condition
+            is false. This type of operation can be achieved by using a do-while loop.
+            <br>In the do-while loop, the body of a loop is always executed at least once. After
+            the
+            body is executed, then it checks the &condition. If the condition is true, then
+            it will
+            again execute the body of a loop otherwise control is transferred out of the
+            &loop.
+            <br>Similar to the while loop, once the control goes out of the loop the statements
+            which
+            are immediately after the loop is &executed.
+            <br>The critical difference between the while and do-while loop is that in while
+            loop the
+            while is written at the beginning. &In do-while loop, the while condition is
+            written at
+            the end and terminates with a semi-colon (;)
+        </h2>
+        <div class="img">
+            <ul>
+                <li><a href="#">Examples for Do-While Loop</a></li>
+            </ul>
+        </div>
+        <h1><br><br>For loop in C</h1>
+        <h2><br>A for loop is a more efficient loop structure in ‘C’ programming. </h2>
+        <h1><br><br>Syntax of For Loop in C:</h1>
+        <h2><br><br>for (initial value; condition; incrementation or decrementation
+            )
+            <br>{
+            <br>statements;
+            <br>}
+            <br><br>• The initial value of the for loop is performed only once.
+            <br>• The condition is a Boolean expression that tests and compares the counter to
+            a fixed value after each iteration, stopping the for loop when
+            false is returned.
+            <br>• The incrementation/decrementation increases (or decreases) the counter by
+            a set value.
+        </h2>
+
+        <div class="img">
+            <ul>
+                <li><a href="#">Example for For Loop </a></li>
+            </ul>
+        </div>
+        <h1><br><br>Break Statement in C</h1>
+        <h2><br>The break statement is used mainly in the switch statement. It is also useful
+            for
+            immediately stopping a loop.</h2>
+        <div class="img">
+            <ul>
+                <li><a href="#">Example for Break Statement </a></li>
+            </ul>
+        </div>
+        <h1><br><br>Continue Statement in C</h1>
+        <h2><br>When you want to skip to the next iteration but remain in the loop, you should
+            use the continue statement.
+        </h2>
+        <div class="img">
+            <ul>
+                <li><a href="#">Example for Continue Statement </a></li>
+            </ul>
+        </div>
+        <h1><br><br>C - Arrays</h1>
+        <h2><br>Arrays a kind of data structure that can store a fixed-size sequential
+            collection of
+            elements of the same type. An array is used to store a collection of data, but
+            it is often
+            more useful to think of an array as a collection of variables of the same type.
+            Instead of declaring individual variables, such as number0, number1, ..., and
+            number99,
+            you declare one array variable such as numbers and use numbers [0], numbers [1],
+            and
+            ..., numbers [99] to represent individual variables. A specific element in an
+            array is
+            accessed by an index.
+            All arrays consist of contiguous memory locations. The lowest address
+            corresponds to
+            the first element and the highest address to the last element
+        </h2>
+
+        <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="array.jpg">
+
+        <h1><br><br>Declaring Arrays</h1>
+        <h2><br>To declare an array in C, a programmer specifies the type of the elements and
+            the
+            number of elements required by an array as follows −
+            <br><br>type array Name [ array Size ];
+            <br><br>This is called a single-dimensional array. The array Size must be an integer
+            constant
+            greater than zero and type can be <br>any valid C data type. For example, to declare
+            a 10-
+            element array called balance of type double.
+            <br>Use this statement −
+            <br><br>double balance [10];
+            <br><br>Here balance is a variable array which is sufficient to hold up to 10 double
+            numbers.
+        </h2>
+        <h1><br><br>Initializing Arrays</h1>
+        <h2><br>You can initialize an array in C either one by one or using a single statement
+            as follows
+            −
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double balance [5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+            <br><br>The number of values between braces {} cannot be larger than the number of
+            elements
+            that we declare for the array between square brackets [].
+            <br>If you omit the size of the array, an array just big enough to hold the
+            initialization is
+            created. Therefore, if you write −
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double balance [] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+            <br><br>You will create exactly the same array as you did in the previous example.
+            Following is
+            an example to assign a single element of the array −
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balance [4] = 50.0;
+            <br><br>The above statement assigns the 5th element in the array with a value of
+            50.0. All arrays
+            have 0 as the index of their first element which is also called the base index
+            and the last
+            index of an array will be total size of the array minus
+        </h2>
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="array init.jpg">
+
+
+
+
+
+
+
+
+
+    </div>
+    <h1><br><br>&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    <h2><br>&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src=".png">
+
+    <div class="img">
+        <ul>
+            <li><a href="#">Click </a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
